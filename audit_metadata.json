@@ -1,0 +1,53 @@
+{
+  "source_repo": "CosmosOS/Cosmos",
+  "source_url": "https://github.com/CosmosOS/Cosmos",
+  "audit_date": "2026-11-12T10:01:58.104947",
+  "scanner_version": "1.3.0",
+  "findings_count": 5,
+  "severity_breakdown": {
+    "MEDIUM": 1,
+    "HIGH": 4
+  },
+  "findings": [
+    {
+      "id": "PY-TEMPFILE-001",
+      "name": "Insecure temp file creation",
+      "severity": "MEDIUM",
+      "cwe": "CWE-377",
+      "file": ".github/scripts/aggregate-coverage.py",
+      "line": 150
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/Cosmos.Kernel.Native.MultiArch/ACPI/uacpi_host.c",
+      "line": 99
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/Cosmos.Kernel.Native.MultiArch/ACPI/uacpi_host.c",
+      "line": 206
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/Cosmos.Kernel.Native.MultiArch/ACPI/uacpi_host.c",
+      "line": 273
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/Cosmos.Kernel.Native.MultiArch/ACPI/uacpi_host.c",
+      "line": 479
+    }
+  ]
+}
